@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: lightgray;
@@ -42,111 +41,105 @@ h4 {
   font-size: 15px;
   padding-bottom: 30px;
   font-weight: lighter;
-  color: lighter;
 }
 
 .lower-header {
-	border-top: .5rem solid gray;
-	margin-bottom: .2rem;
+  border-top: .5rem solid gray;
+  margin-bottom: .2rem;
   border-top-style: double;
   padding-bottom: 20px;
   width: 100%;
+  align-self: center;
 }
 
-.main-flex {
-  display: flex;
-  flex-direction: column;
-}
+
+/*-----CONTACT INFO STYLING-----*/
 
 form {
   padding-right: 15px;
   padding-left: 15px;
 }
 
-
-input:focus{
-  box-shadow: 0 0 9px #27556C;
-}
-
-fieldset .contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  margin-top: 50px;
-}
-
-fieldset .contact,
-legend {
-  font-weight: bold;
-  font-size: 20px;
-  padding-bottom: 30px;
-}
-
 fieldset {
   border: none;
 }
 
-.fieldset1 {
-	padding-right:0;
-	padding-left: 0;
-	padding-bottom: 1rem;
+.fiedlset1  {
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 15px;
 }
 
-
-label {
+legend {
   font-weight: bold;
 }
 
-.label {
+input {
+  border: solid 2px gray;
   display: block;
+  border-radius: 3px;
+  width: 98%;
+  height: 40px;
+  transition: all .1s
 }
-input::placeholder {
-	color: lightgrey;
-	text-align: right;
+
+
+::-webkit-input-placeholder {
+  text-align: right;
   padding-right: 20px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="number"],
-textarea {
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 10px 0;
-  width: 100%;
-  margin-bottom: 30px;
-  border: 1px solid #113D52;
-  border-radius: 5px;
-}
-
 select {
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 10px 0;
-  width: 100%;
+  border: none;
+  background-color: rgb(232, 232, 232);
+  border-radius: 3px;
+  display: block;
+  height: 40px;
+  width: 98%;
+
+}
+
+label {
+  font-size: 14px;
+  display: inline-block;
+  padding-bottom: 0px;
+}
+
+#zip {
+  width: 50%;
   margin-bottom: 30px;
-  border: 1px solid #113D52;
-  border-radius: 5px;
-
 }
 
-.input-container {
-  display: flex;
-  flex-direction: column;
-}
+/*-----NEWSLETTER STYLING-----*/
 
-  .news-header {
-  	border-top: .5rem solid gray;
-  	margin-bottom: .2rem;
+.news-header {
+    border-top: .5rem solid gray;
+    margin-bottom: .2rem;
     border-top-style: double;
     padding-bottom: 20px;
     width: 100%;
+    align-self: center;
+
   }
+
+.radio {
+  font-size: 18px;
+  transition: all .1s;
+}
+
+.#newsletter {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  border-radius: 3px;
+  background-color: rgb(232, 232, 232);
+}
 
 .input-container-zip {
   display: flex;
@@ -157,23 +150,14 @@ input[id="zip"] {
   width: 50%;
 }
 
-div .news1 {
-  border-top: solid gray 10px;
-  border-top-style: double;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 
-div .news1 legend {
-  padding-bottom: 10px;
-}
-
-.news {
-  padding-bottom: 10px;
-}
 
 .others {
   padding-top: 20px;
+}
+
+textarea #other {
+  border: solid black 5px;
 }
 
 input[type="radio"],
@@ -181,12 +165,8 @@ input[type="checkbox"] {
   margin: 0 4px 8px 0;
 }
 
-textarea:focus {
-  box-shadow: 0 0 9px #27556C;
-}
-
 button {
-  padding: 19px 39px 18px 39px;
+  padding: 19px 25px 18px 25px;
   color: #FFF;
   background-color: #457186;
   font-size: 18px;
@@ -216,18 +196,44 @@ padding-left: 3px;
 font-size: 15px;
 padding-bottom: 30px;
 font-weight: lighter;
-color: lighter;
 text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+.newsletter input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  display: inline-block;
+}
 
-    h4 {
+input:focus{
+  box-shadow: 0 0 9px #27556C;
+}
+
+textarea:focus {
+  box-shadow: 0 0 9px #27556C;
+}
+select:focus {
+  box-shadow: 0 0 9px #27556C;
+}
+
+input:hover,
+radio:hover,
+checkbox:hover,
+select:hover {
+  border-color: #27556C;
+}
+
+
+
+/*-------------------DESKTOP LAYOUT------------------*/
+  @media (min-width: 768px) {
+
+      h4 {
       padding-right: 25%;
       padding-left: 25%;
       width: 50%;
       align-self: center;
-      border-bottom-width: 50%;
     }
 
     h3 {
@@ -235,33 +241,34 @@ text-align: center;
     }
 
     .lower-header {
-      width: 50%;
+      width: 100%;
       align-self: center;
       padding: 0;
       padding-bottom: 20px;
     }
 
-    form {
-      width:50%;
-      align-self: center;
-      padding: 0;
-    }
-
-    .input-container {
-      display: flex;
-      flex-direction: row;
-    }
-
     label {
-      flex: 3.4;
-      padding: 5px;
+      display: inline-block;
+      width: 30%;
+      margin-bottom: 25px;
     }
 
+    h2,
+    p.sub-header,
+    fieldset.contact,
+    fieldset.newsletter {
+      padding-left: 15%;
+      padding-right: 15%;
+    }
 
-    .input-container input {
-     justify-content: space-between;
-     justify-content: flex-start;
-     width: 100%;
+    #state {
+      display: inline-block;
+      margin-bottom: 10px;
+      width: 60%;
+    }
+
+    #zip {
+      width: 25%;
     }
 
     .input-container-zip {
@@ -270,51 +277,37 @@ text-align: center;
     }
 
     .input-container-zip label {
-      padding-right: 10px;
+      padding-right: 5px;
     }
 
-    /* .state-container {
-      display: flex;
-    }
-
-    .state-container input {
-      justify-content: space-between;
-      width: 100%;
-    } */
-
-    label {
-      flex: 1;
-    }
     input {
-      flex: 2;
+      display: inline-block;
+      width: 60%;
+      }
+
+    legend .newsletter {
+      font-weight: bold;
     }
 
-    /* .lower-header {
-	    width: 50%;
-	    align-self: center;
-    } */
+    .newsletter label {
+      margin-bottom: 10px;
+      padding-left: 10px;
+    }
+
+    label .light {
+      padding-left: 10px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+    }
 
     textarea {
-		width: 100%;
-		height: 7rem;
-		margin-top: 1.2rem;
-		margin-bottom: 1.2rem;
-		background-color: #F0F0F0	;
-		border: none;
-
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+      width: 100%;
+      height: 7rem;
+      margin-top: 1.2rem;
+      margin-bottom: 1.2rem;
+      background-color: #F0F0F0;
+    }
+  }
