@@ -1,0 +1,320 @@
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: lightgray;
+}
+
+.title-header {
+  display: flex;
+}
+
+.title-header,
+h1 {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  background-color: #27556C;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.sub-header {
+  display: flex;
+}
+
+.sub-header,
+h3, h4 {
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+h4 {
+  margin-top: 10px;
+  padding-right: 3px;
+  padding-left: 3px;
+  font-size: 15px;
+  padding-bottom: 30px;
+  font-weight: lighter;
+  color: lighter;
+}
+
+.lower-header {
+	border-top: .5rem solid gray;
+	margin-bottom: .2rem;
+  border-top-style: double;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.main-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+input:focus{
+  box-shadow: 0 0 9px #27556C;
+}
+
+fieldset .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+fieldset .contact,
+legend {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 30px;
+}
+
+fieldset {
+  border: none;
+}
+
+.fieldset1 {
+	padding-right:0;
+	padding-left: 0;
+	padding-bottom: 1rem;
+}
+
+
+label {
+  font-weight: bold;
+}
+
+.label {
+  display: block;
+}
+input::placeholder {
+	color: lightgrey;
+	text-align: right;
+  padding-right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #113D52;
+  border-radius: 5px;
+}
+
+select {
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #113D52;
+  border-radius: 5px;
+
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+  .news-header {
+  	border-top: .5rem solid gray;
+  	margin-bottom: .2rem;
+    border-top-style: double;
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+.input-container-zip {
+  display: flex;
+  flex-direction: column;
+}
+
+input[id="zip"] {
+  width: 50%;
+}
+
+div .news1 {
+  border-top: solid gray 10px;
+  border-top-style: double;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div .news1 legend {
+  padding-bottom: 10px;
+}
+
+.news {
+  padding-bottom: 10px;
+}
+
+.others {
+  padding-top: 20px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+textarea:focus {
+  box-shadow: 0 0 9px #27556C;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #457186;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #113D52;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+}
+
+div .news-format {
+  padding-bottom: 20px;
+}
+
+div .news-format,
+label .news {
+  padding-bottom: 10px;
+}
+
+p {
+margin-top: 10px;
+margin-bottom: 50px;
+padding-right: 3px;
+padding-left: 3px;
+font-size: 15px;
+padding-bottom: 30px;
+font-weight: lighter;
+color: lighter;
+text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    h4 {
+      padding-right: 25%;
+      padding-left: 25%;
+      width: 50%;
+      align-self: center;
+      border-bottom-width: 50%;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    .lower-header {
+      width: 50%;
+      align-self: center;
+      padding: 0;
+      padding-bottom: 20px;
+    }
+
+    form {
+      width:50%;
+      align-self: center;
+      padding: 0;
+    }
+
+    .input-container {
+      display: flex;
+      flex-direction: row;
+    }
+
+    label {
+      flex: 3.4;
+      padding: 5px;
+    }
+
+
+    .input-container input {
+     justify-content: space-between;
+     justify-content: flex-start;
+     width: 100%;
+    }
+
+    .input-container-zip {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .input-container-zip label {
+      padding-right: 10px;
+    }
+
+    /* .state-container {
+      display: flex;
+    }
+
+    .state-container input {
+      justify-content: space-between;
+      width: 100%;
+    } */
+
+    label {
+      flex: 1;
+    }
+    input {
+      flex: 2;
+    }
+
+    /* .lower-header {
+	    width: 50%;
+	    align-self: center;
+    } */
+
+    textarea {
+		width: 100%;
+		height: 7rem;
+		margin-top: 1.2rem;
+		margin-bottom: 1.2rem;
+		background-color: #F0F0F0	;
+		border: none;
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
