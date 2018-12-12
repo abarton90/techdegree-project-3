@@ -127,11 +127,10 @@ label {
   transition: all .1s;
 }
 
-.#newsletter {
+#newsletter {
   text-align: left;
   font-size: 14px;
   font-weight: 500;
-
 }
 
 textarea {
